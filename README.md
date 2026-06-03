@@ -529,9 +529,9 @@ salidas/equipo06_ascenso_descenso_desviacion.png
 
 ---
 
-## 14. Parámetros recomendados para clase
+## 14. Parámetros recomendados 
 
-Salvo autorización del profesor, se recomienda mantener:
+Se recomienda mantener:
 
 ```txt
 sample_period = 0.10 s
@@ -610,76 +610,6 @@ Recomendación:
 ### No aparece la gráfica
 
 Los scripts auditados usan un backend no interactivo de Matplotlib para guardar PNG en `salidas/`. No es necesario que se abra una ventana gráfica.
-
----
-
-## 17. Datos que deben entregar los equipos
-
-Cada equipo deberá conservar:
-
-```txt
-CSV experimental
-archivo metadata JSON
-gráfica PNG
-resumen CSV, si el proyecto lo genera
-bitácora experimental
-observaciones de vuelo
-```
-
-Para la tarea posterior, el CSV será usado en MATLAB/Simulink para:
-
-1. importar datos,
-2. graficar altura contra tiempo,
-3. estimar altura inicial y final,
-4. calcular \(\Delta h\),
-5. calcular \(\Delta r\),
-6. estimar \(K\),
-7. estimar \(\tau\) por método del 63 %, 
-8. construir un modelo de primer orden,
-9. simular el modelo,
-10. comparar modelo contra datos experimentales,
-11. calcular error RMS,
-12. interpretar la calidad del modelo.
-
----
-
-## 18. Uso recomendado del repositorio
-
-Una estructura sugerida del repositorio es:
-
-```txt
-MR2023-Tello-Modelacion/
-├── README.md
-├── zips/
-│   ├── MR2023_Tello_HelloWorld.zip
-│   ├── sesion06_bloque2_python_v3.zip
-│   ├── sesion06_equipo01_repetibilidad_audited.zip
-│   ├── sesion06_equipo02_amplitud_audited.zip
-│   ├── sesion06_equipo03_descenso_audited.zip
-│   ├── sesion06_equipo04_secuencia_audited.zip
-│   ├── sesion06_equipo05_punto_operacion_audited.zip
-│   └── sesion06_equipo06_ascenso_descenso_audited.zip
-└── docs/
-    └── instructivos_de_clase/
-```
-
-También puede subirse cada proyecto descomprimido en carpetas separadas si se desea que los alumnos inspeccionen el código directamente desde GitHub.
-
----
-
-## 19. Mensaje para los estudiantes
-
-Este laboratorio reproduce, a escala académica, una práctica real de ingeniería: antes de diseñar controladores sofisticados, se necesita medir, validar y entender la dinámica del sistema.
-
-Un CSV no es todavía un modelo. Una gráfica no es todavía una explicación. Una función de transferencia no es todavía validación.
-
-El reto profesional es construir la cadena completa:
-
-\[
-\text{Experimento} \rightarrow \text{Datos} \rightarrow \text{Modelo} \rightarrow \text{Validación} \rightarrow \text{Conclusión técnica}
-\]
-
-Ese es el corazón de la modelación para automatización.
 
 ---
 
